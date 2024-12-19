@@ -6,9 +6,9 @@ import Box from '@mui/material/Box';
 function LogoBox() {
     return (
     <Box sx = {{flexGrow: 1}}>
-    <StyledTypography variant="h6" component = "a" href = "#" sx={{flexGrow: 1}}>
+    <StyledTypography variant="h5" component = "a" href = "#">
         <ImageIcon />
-            DermPal
+        DermPal
     </StyledTypography>
     </Box>
     )};

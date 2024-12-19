@@ -1,10 +1,14 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/Header/Navbar';
+import Background from './components/Body/Background';
+import './App.css';
 
 function App() {
   return (
-    <div>
-    <Navbar />
+    <div className = 'app'>
+      <Background/>
+      <Navbar />
+    <div className = 'content'>
     <h1>Dermpal </h1>
           <p>
             Lorem Ipsum
@@ -57,6 +61,7 @@ function App() {
 
           Freestar
       </p>
+      </div>
     </div>
   );
 }

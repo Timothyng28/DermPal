@@ -4,7 +4,6 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import Box from '@mui/material/Box';
 
-// Create styled components directly
 
 export const StyledBox = styled(Box)({
     display: 'flex',
@@ -52,7 +51,6 @@ export const StyledMenuList = styled('ul')({
   
 
 export const StyledTypography = styled(Typography)({
-        flexGrow: 1,
         textDecoration: 'none',
         color: 'teal',
         fontWeight: 'bold',

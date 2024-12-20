@@ -9,7 +9,7 @@ import Tabs from './Tabs';
 function Navbar() {
 
     return (
-    <StyledAppBar position="static">
+    <StyledAppBar position="sticky">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
             <LogoBox />
             <Tabs />

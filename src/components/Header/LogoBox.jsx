@@ -7,7 +7,6 @@ function LogoBox() {
     return (
     <Box sx = {{flexGrow: 1}}>
     <StyledTypography variant="h5" component = "a" href = "/">
-        <ImageIcon />
         DermPal
     </StyledTypography>
     </Box>

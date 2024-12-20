@@ -18,17 +18,17 @@ function Tabs() {
 
     return (
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flexGrow: 1 }}>
-            <NavButton>Home</NavButton>
+            <NavButton onClick={() => window.location.href = '/'}>Home</NavButton>
             <Box>
                 <NavButton onClick={handleOpenMenu}>Features</NavButton>
                 <DropDown anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleCloseMenu} MenuListProps={{ "aria-labelledby": "basic-button", component: StyledMenuList}} >
-                <MenuItem>Option 1</MenuItem>
-                <MenuItem>Option 2</MenuItem>
-                <MenuItem>Option 3</MenuItem>
+                    <MenuItem onClick={() => window.location.href = '/dermai'} >DermAI</MenuItem>
+                    <MenuItem onClick={() => window.location.href = '/dermjournal'} >DermJournal</MenuItem>
+                    <MenuItem onClick={() => window.location.href = '/dermmarket'} >DermMarket</MenuItem>
                 </DropDown>
             </Box>
-            <NavButton>About</NavButton>
-            <NavButton>Our Team</NavButton>
+            <NavButton onClick={() => window.location.href = '/about'}>About</NavButton>
+            <NavButton onClick = {() => window.location.href = '/our-team'} >Our Team</NavButton>
         </Box>
     );
 }

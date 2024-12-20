@@ -7,7 +7,6 @@ import AppRoutes from './routes/Routes';
 function App() {
   return (
     <div className = 'app'>
-      <Background/>
       <Navbar />
       <AppRoutes />
     </div>

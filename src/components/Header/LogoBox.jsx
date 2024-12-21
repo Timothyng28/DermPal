@@ -1,5 +1,4 @@
 import React from 'react';
-import ImageIcon from '@mui/icons-material/Image';
 import { StyledTypography } from './NavbarStyles';
 import Box from '@mui/material/Box';
 

@@ -35,13 +35,4 @@ function Tabs() {
 
 export default Tabs;
 
-// ...existing code...
-<div className='intro'>
-    <div>
-        <h1>Welcome to Dermpal</h1>
-    </div>
-    <div>
-        <p>Your one stop skincare solution</p>
-    </div>
-</div>
-// ...existing code...
+

@@ -9,7 +9,7 @@ function Home() {
         <div>
             <Background />
         <div className='intro'>
-            <h1 style={{ color: theme.palette.primary.main }}>Welcome to Dermpal</h1>
+            <h1 style={{ color: theme.palette.primary.main }}>Welcome to DermPal</h1>
             <p style = {{color : theme.palette.secondary.main}}>Your one stop skincare solution</p>
         </div>
         </div>

@@ -1,0 +1,18 @@
+
+
+#content {
+    background-image: url("./bg.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensure the content div takes the full height of the viewport */
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    transform: translateY(37%);
+}

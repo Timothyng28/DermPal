@@ -6,7 +6,7 @@ import Grid2 from "@mui/material/Grid2";
 
 function TeamCard(props) {
   return (
-    <Card sx={{ width: 200 }}>
+    <Card sx={{ width: 200, height: 415}}>
       <CardMedia
         component="img"
         height="140"
@@ -22,7 +22,7 @@ function TeamCard(props) {
         </Typography>
         <div style={{ height: "10px" }} />
         <Typography variant="body2" color="black" style={{ height: "150px" }}>
-          SHORT write up HELLO HI I LOVE IT HERE HAHAHHA LOL
+            {props.writeup}
         </Typography>
         <Grid2
           container

@@ -5,7 +5,7 @@ import About from "../pages/About/About";
 import OurTeam from "../pages/Our Team/OurTeam";
 import DermAi from "../pages/Features/DermAi";
 import DermJournal from "../pages/Features/DermJournal";
-import DermMarket from "../pages/Features/DermMarket";
+import DermMart from "../pages/Features/DermMart";
 
 function AppRoutes() {
   return (
@@ -16,7 +16,7 @@ function AppRoutes() {
         <Route path="/our-team" element={<OurTeam />} />
         <Route path="/dermai" element={<DermAi />} />
         <Route path="/dermjournal" element={<DermJournal />} />
-        <Route path="/dermmarket" element={<DermMarket />} />
+        <Route path="/dermmart" element={<DermMart />} />
         <Route path="*" element={<h>404 Not Found</h>} />
       </Routes>
     </Router>

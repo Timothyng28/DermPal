@@ -1,9 +1,10 @@
 import React from "react";
+import WorkInProgress from "./WorkInProgress";
 
 function DermAi() {
   return (
     <div>
-      <h1>DermAi</h1>
+      <WorkInProgress feature = "DermAI"/>
     </div>
   );
 }

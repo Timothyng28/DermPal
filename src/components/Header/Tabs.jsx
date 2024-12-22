@@ -24,7 +24,7 @@ function Tabs() {
                 <DropDown anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleCloseMenu} MenuListProps={{ "aria-labelledby": "basic-button", component: StyledMenuList}} >
                     <MenuItem onClick={() => window.location.href = '/dermai'} >DermAI</MenuItem>
                     <MenuItem onClick={() => window.location.href = '/dermjournal'} >DermJournal</MenuItem>
-                    <MenuItem onClick={() => window.location.href = '/dermmarket'} >DermMarket</MenuItem>
+                    <MenuItem onClick={() => window.location.href = '/dermmart'} >DermMart</MenuItem>
                 </DropDown>
             </Box>
             <NavButton onClick={() => window.location.href = '/about'}>About</NavButton>
@@ -34,5 +34,3 @@ function Tabs() {
 }
 
 export default Tabs;
-
-

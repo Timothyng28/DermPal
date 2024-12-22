@@ -1,9 +1,10 @@
 import React from "react";
+import WorkInProgress from "./WorkInProgress";
 
 function DermMarket() {
   return (
     <div>
-      <h1>DermMarket</h1>
+      <WorkInProgress feature = "DermMart"/>
     </div>
   );
 }

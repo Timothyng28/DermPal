@@ -1,9 +1,10 @@
 import React from 'react';
+import WorkInProgress from './WorkInProgress';
 
 function DermJournal() {
     return (
         <div>
-            <h1>DermJournal</h1>
+            <WorkInProgress feature = "DermJournal"/>
         </div>
     );
 }

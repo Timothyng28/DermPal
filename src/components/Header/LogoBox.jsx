@@ -1,17 +1,16 @@
 import React from "react";
 import { StyledTypography } from "./NavbarStyles";
 import Box from "@mui/material/Box";
-import ImageIcon from "@mui/icons-material/Image";
+import Logo from "../../assets/Logo.png";
 
 function LogoBox() {
-  return (
+return (
     <Box sx={{ flexGrow: 1 }}>
-      <StyledTypography variant="h5" component="a" href="/">
-        <ImageIcon />
-        DermPal
-      </StyledTypography>
+        <StyledTypography variant="h5" component="a" href="/">
+            <img src={Logo} alt="DermPal Logo" style={{ height: '50px', marginRight: '0px' }} />
+        </StyledTypography>
     </Box>
-  );
+);
 }
 
 export default LogoBox;

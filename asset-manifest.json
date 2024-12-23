@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/DermPal/static/css/main.991c9540.css",
-    "main.js": "/DermPal/static/js/main.89c729b8.js",
+    "main.js": "/DermPal/static/js/main.d27de3af.js",
     "static/js/488.cbcc0ced.chunk.js": "/DermPal/static/js/488.cbcc0ced.chunk.js",
     "static/media/Logo.png": "/DermPal/static/media/Logo.d160f1a5624d3f0ddb5e.png",
     "static/media/bg.svg": "/DermPal/static/media/bg.3a2db7575f72515de9ef.svg",
@@ -10,11 +10,11 @@
     "static/media/BG.svg": "/DermPal/static/media/BG.192290d8799985e6e23475dfb19bdd26.svg",
     "index.html": "/DermPal/index.html",
     "main.991c9540.css.map": "/DermPal/static/css/main.991c9540.css.map",
-    "main.89c729b8.js.map": "/DermPal/static/js/main.89c729b8.js.map",
+    "main.d27de3af.js.map": "/DermPal/static/js/main.d27de3af.js.map",
     "488.cbcc0ced.chunk.js.map": "/DermPal/static/js/488.cbcc0ced.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.991c9540.css",
-    "static/js/main.89c729b8.js"
+    "static/js/main.d27de3af.js"
   ]
 }

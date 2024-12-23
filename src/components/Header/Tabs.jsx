@@ -1,7 +1,9 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import { NavButton, DropDown, StyledMenuList} from './NavbarStyles';
+import {DropDown, StyledMenuList} from './NavbarStyles';
 import MenuItem from '@mui/material/MenuItem';
+import Button from '@mui/material/Button';
+import { Link } from 'react-router-dom'
 
 function Tabs() {
 
@@ -18,17 +20,17 @@ function Tabs() {
 
     return (
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flexGrow: 1 }}>
-            <NavButton onClick={() => window.location.href = '/'}>Home</NavButton>
+            <Button component = {Link} to = '/'>Home</Button>
             <Box>
-                <NavButton onClick={handleOpenMenu}>Features</NavButton>
+                <Button onClick={handleOpenMenu}>Features</Button>
                 <DropDown anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleCloseMenu} MenuListProps={{ "aria-labelledby": "basic-button", component: StyledMenuList}} >
-                    <MenuItem onClick={() => window.location.href = '/dermai'} >DermAI</MenuItem>
-                    <MenuItem onClick={() => window.location.href = '/dermjournal'} >DermJournal</MenuItem>
-                    <MenuItem onClick={() => window.location.href = '/dermmart'} >DermMart</MenuItem>
+                    <MenuItem component = {Link} to = '/dermai' >DermAI</MenuItem>
+                    <MenuItem component = {Link} to = '/dermjournal'>DermJournal</MenuItem>
+                    <MenuItem component = {Link} to = '/dermmart' >DermMart</MenuItem>
                 </DropDown>
             </Box>
-            <NavButton onClick={() => window.location.href = '/about'}>About</NavButton>
-            <NavButton onClick = {() => window.location.href = '/our-team'} >Our Team</NavButton>
+            <Button component = {Link} to = '/about'>About</Button>
+            <Button component = {Link} to = '/our-team'>Our Team</Button>
         </Box>
     );
 }

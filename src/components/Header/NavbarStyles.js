@@ -12,7 +12,7 @@ export const StyledBox = styled(Box)({
 });
 
 export const StyledAppBar = styled(AppBar)(({ theme }) => ({
-  background: theme.palette.gradient.main,
+  background: theme.gradients.primary,
   color: "#fff",
 }));
 

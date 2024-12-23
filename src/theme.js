@@ -11,9 +11,6 @@ const theme = createTheme({
       background: {
         default: '#f5f5f5', // Background color
       },
-      gradient: {
-        main: 'linear-gradient(45deg, #A8DADC 30%, #D4A5F5 90%)', // Gradient color
-      },
       text: {
         primary: '#000000', // Main text color
         secondary: '#757575', // Secondary text color
@@ -21,6 +18,9 @@ const theme = createTheme({
     },
     typography: {
       fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    },
+    gradients: {
+      primary: 'linear-gradient(45deg, #A8DADC 30%, #D4A5F5 90%)', // Gradient color
     },
   });
   

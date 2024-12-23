@@ -13,9 +13,9 @@ function AppRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/our-team" element={<OurTeam />} />
-        <Route path="/dermai" element={<DermAi />} />
-        <Route path="/dermjournal" element={<DermJournal />} />
-        <Route path="/dermmart" element={<DermMart />} />
+        <Route path="/features/dermai" element={<DermAi />} />
+        <Route path="/features/dermjournal" element={<DermJournal />} />
+        <Route path="/features/dermmart" element={<DermMart />} />
         <Route path="*" element={<h1>404 Not Found</h1>} />
       </Routes>
   );

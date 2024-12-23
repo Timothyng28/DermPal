@@ -1,13 +1,13 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import {DropDown, StyledMenuList} from './NavbarStyles';
+import {DropDown, StyledMenuList, NavButton} from './NavbarStyles';
 import MenuItem from '@mui/material/MenuItem';
-import Button from '@mui/material/Button';
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function Tabs() {
 
     const [anchorEl, setAnchorEl] = React.useState(null);
+    const location = useLocation();
 
     const handleOpenMenu = (event) => {
         console.log(event.currentTarget);
@@ -18,19 +18,26 @@ function Tabs() {
         setAnchorEl(null);
     };
 
+    const isActive = (path) => {
+        if (path === '/features') {
+            return location.pathname.includes('/features');
+        }
+        return location.pathname === path;
+    };
+
     return (
         <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-evenly', flexGrow: 1 }}>
-            <Button component = {Link} to = '/'>Home</Button>
+            <NavButton component = {Link} to = '/' isActive={isActive('/')}>Home</NavButton>
             <Box>
-                <Button onClick={handleOpenMenu}>Features</Button>
+                <NavButton onClick={handleOpenMenu} isActive = {isActive('/features')}>Features</NavButton>
                 <DropDown anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleCloseMenu} MenuListProps={{ "aria-labelledby": "basic-button", component: StyledMenuList}} >
-                    <MenuItem component = {Link} to = '/dermai' >DermAI</MenuItem>
-                    <MenuItem component = {Link} to = '/dermjournal'>DermJournal</MenuItem>
-                    <MenuItem component = {Link} to = '/dermmart' >DermMart</MenuItem>
+                    <MenuItem component = {Link} to = '/features/dermai' >DermAI</MenuItem>
+                    <MenuItem component = {Link} to = '/features/dermjournal'>DermJournal</MenuItem>
+                    <MenuItem component = {Link} to = '/features/dermmart' >DermMart</MenuItem>
                 </DropDown>
             </Box>
-            <Button component = {Link} to = '/about'>About</Button>
-            <Button component = {Link} to = '/our-team'>Our Team</Button>
+            <NavButton component = {Link} to = '/about' isActive={isActive('/about')}>About</NavButton>
+            <NavButton component = {Link} to = '/our-team' isActive={isActive('/our-team')}>Our Team</NavButton>
         </Box>
     );
 }

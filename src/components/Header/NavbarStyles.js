@@ -3,6 +3,7 @@ import AppBar from "@mui/material/AppBar";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 
 export const StyledBox = styled(Box)({
   display: "flex",
@@ -16,18 +17,15 @@ export const StyledAppBar = styled(AppBar)(({ theme }) => ({
   color: "#fff",
 }));
 
-export const NavButton = styled("button")({
-  color: "black",
-  backgroundColor: "transparent",
-  marginLeft: "10px",
-  border: "none",
-  fontSize: "1.1rem",
-  fontWeight: "bold",
-  "&:hover": {
-    cursor: "pointer",
-    color: "teal",
-  },
-});
+export const NavButton = styled(Button)(({ theme, isActive }) => ({
+    backgroundColor: isActive ? theme.palette.primary.main : 'transparent',
+    color: isActive ? "lightgrey" : 'black',
+    transition: 'background-color 0.3s, color 0.3s',
+    '&:hover': {
+      backgroundColor: 'teal',
+      color: 'white',
+    },
+  }));
 
 export const DropDown = styled(Menu)({
   backgroundColor: "transparent",

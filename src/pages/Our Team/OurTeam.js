@@ -12,15 +12,24 @@ function OurTeam() {
         "https://media.licdn.com/dms/image/v2/D5603AQGJHXDAddxyIA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724936959007?e=1740009600&v=beta&t=ZI9RwqqlgBXsVLkpyo-vvbK0PEUSfR9MyhDkNxK_c-Y",
       linkedin: "https://www.linkedin.com/in/timothy-luke-ng/",
       email: "timothyng28@gmail.com",
-      writeup: "HAHAHAHA the person beside me is really cool!",
+      writeup: " I have a passion for combining AI and creativity to solve big challenges, like making skincare smarter and easier for everyone!",
     },
     {
-      name: "LOL",
-      role: "Front-End Developer",
+      name: "Sarah",
+      role: "Data Analyst/AI Developer",
       image:
-        "https://pbs.twimg.com/profile_images/1836825106716172288/C_MFCpeJ_400x400.jpg",
-      writeup: "IM VERY COOL",
+        "https://media.licdn.com/dms/image/v2/D5603AQFsv6tsL7ATbA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728649920174?e=1740614400&v=beta&t=sDP55sQikfE3HKRRHKOpht_OCuDEAHpy0YMcD0U48Xs",
+        linkedin: "https://www.linkedin.com/in/sarah-quan-zhi-yun/",
+      writeup: "-",
     },
+    {
+        name: "Brandon",
+        role: "Business Developer",
+        image:
+          "https://media.licdn.com/dms/image/v2/D4E03AQGPpXAIdI0J6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728446724907?e=1740614400&v=beta&t=MOIfLOoedSFI8YFx7RyHMKbCyYvjNRQ8uDxlbN1A-dA",
+          linkedin: "https://www.linkedin.com/in/yuseunggyun/",
+        writeup: "-",
+      },
   ];
 
   return (

@@ -1,10 +1,11 @@
 import React from "react";
-import WorkInProgress from "./WorkInProgress";
+import SneakPeek from "./Sneakpeak";
+import sample from "../../assets/dermAI_sample.png";
 
 function DermAi() {
   return (
     <div>
-      <WorkInProgress feature = "DermAI"/>
+      <SneakPeek image={sample}/>
     </div>
   );
 }

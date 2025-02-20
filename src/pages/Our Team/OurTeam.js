@@ -9,7 +9,7 @@ function OurTeam() {
       name: "Timothy",
       role: "Full-Stack/AI Developer",
       image:
-        "https://media.licdn.com/dms/image/v2/D5603AQGJHXDAddxyIA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724936959007?e=1740009600&v=beta&t=ZI9RwqqlgBXsVLkpyo-vvbK0PEUSfR9MyhDkNxK_c-Y",
+        "https://media.licdn.com/dms/image/v2/D5603AQGJHXDAddxyIA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724936958979?e=1745452800&v=beta&t=ewEiDbejDNQr77z9yW2lIVzPzoubtAYhnMv8NiZA7ZY",
       linkedin: "https://www.linkedin.com/in/timothy-luke-ng/",
       email: "timothyng28@gmail.com",
       writeup: " I have a passion for combining AI and creativity to solve big challenges, like making skincare smarter and easier for everyone!",
